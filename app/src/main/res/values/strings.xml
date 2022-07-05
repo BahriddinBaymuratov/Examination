@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Examination</string>
+    <string name="log_out">Log out</string>
+    <string name="cignifi">cignifi</string>
+    <string name="A">CIGNIFI</string>
+    <string name="login_to_your_account">Login to your Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sing_in">Sing In</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="or_sign_in_with">- Or sign In with</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_your_account">Create your Account</string>
+    <string name="create_login">Create Login</string>
+    <string name="login">Login</string>
+    <string name="todo">TODO</string>
+    <string name="number">TODO</string>
+    <string name="black">TODO</string>
+    <string name="salom_world">Salom World!</string>
+</resources>
