@@ -46,7 +46,5 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(ACTION_VIEW, Uri.parse("https://google.com/"))
             startActivity(intent)
         }
-
     }
-
 }

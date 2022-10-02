@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         binding.textView.text = email
         binding.textView2.text = pass
 
-
         binding.btnOut.setOnClickListener {
             mySharedPreferences.clear()
             finish()
