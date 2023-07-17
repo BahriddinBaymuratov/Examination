@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".CreateActivity">
 
     <TextView
@@ -30,6 +30,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -51,7 +52,8 @@
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editPass"
@@ -67,9 +69,11 @@
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/conPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
@@ -92,75 +96,74 @@
         android:text="@string/sing_in"
         app:cornerRadius="12dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:gravity="center"-->
+    <!--        android:orientation="vertical">-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="50dp"
-            android:text="@string/or_sign_in_with" />
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:text="@string/or_sign_in_with" />-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+    <!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:orientation="horizontal">&ndash;&gt;-->
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/btnGoogle"
-                android:layout_width="120dp"
-                android:layout_height="70dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="10dp">
+    <!--&lt;!&ndash;            <androidx.cardview.widget.CardView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:id="@+id/btnGoogle"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="120dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="70dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:cardCornerRadius="8dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:cardElevation="10dp">&ndash;&gt;-->
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/img"
-                    android:contentDescription="@string/todo" />
-            </androidx.cardview.widget.CardView>
+    <!--&lt;!&ndash;                <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_width="40dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_height="40dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:src="@drawable/img"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:contentDescription="@string/todo" />&ndash;&gt;-->
+    <!--&lt;!&ndash;            </androidx.cardview.widget.CardView>&ndash;&gt;-->
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/btnPhone"
-                android:layout_width="120dp"
-                android:layout_height="70dp"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="10dp">
+    <!--&lt;!&ndash;            <androidx.cardview.widget.CardView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:id="@+id/btnPhone"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="120dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="70dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_margin="12dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:cardCornerRadius="8dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:cardElevation="10dp">&ndash;&gt;-->
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/img_1"
-                    android:contentDescription="@string/number" />
-            </androidx.cardview.widget.CardView>
+    <!--&lt;!&ndash;                <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_width="40dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_height="40dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:src="@drawable/img_1"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:contentDescription="@string/number" />&ndash;&gt;-->
+    <!--&lt;!&ndash;            </androidx.cardview.widget.CardView>&ndash;&gt;-->
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/btnSms"
-                android:layout_width="120dp"
-                android:layout_height="70dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="10dp">
+    <!--&lt;!&ndash;            <androidx.cardview.widget.CardView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:id="@+id/btnSms"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="120dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="70dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:cardCornerRadius="8dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:cardElevation="10dp">&ndash;&gt;-->
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/img_2"
-                    android:contentDescription="@string/black" />
-            </androidx.cardview.widget.CardView>
+    <!--&lt;!&ndash;                <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_width="40dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_height="40dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:src="@drawable/img_2"&ndash;&gt;-->
+    <!--&lt;!&ndash;                    android:contentDescription="@string/black" />&ndash;&gt;-->
 
-        </LinearLayout>
+    <!--&lt;!&ndash;            </androidx.cardview.widget.CardView>&ndash;&gt;-->
 
+    <!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
 
-    </LinearLayout>
-
+    <!--    </LinearLayout>-->
 
 </LinearLayout>

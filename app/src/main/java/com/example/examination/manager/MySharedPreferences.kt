@@ -16,15 +16,14 @@ class MySharedPreferences(private val context: Context) {
         edit.putString(PASS, pass)
         edit.apply()
     }
-    fun getData(key:String):String?{
+
+    fun getData(key: String): String? {
         return sharedPreferences.getString(key, null)
     }
-    fun clear(){
+
+    fun clear() {
         val edit = sharedPreferences.edit()
         edit.clear()
         edit.apply()
     }
-
-
-
 }

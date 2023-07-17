@@ -26,9 +26,11 @@ class LoginActivity : AppCompatActivity() {
             val pass = binding.editPass.text.toString().trim()
 
             mySharedPreferences.saveData(email, pass)
-            startActivity(Intent(this,MainActivity::class.java))
-            finish()
-            Toast.makeText(this, "SuccessFully", Toast.LENGTH_SHORT).show()
+            if (email.isNotBlank() && pass.isNotBlank()){
+                startActivity(Intent(this,MainActivity::class.java))
+                finish()
+                Toast.makeText(this, "SuccessFully", Toast.LENGTH_SHORT).show()
+            }
         }
 
         binding.textSignIn.setOnClickListener {
