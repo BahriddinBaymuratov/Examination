@@ -6,7 +6,7 @@ import com.example.examination.util.Constants.EMAIL
 import com.example.examination.util.Constants.PASS
 import com.example.examination.util.Constants.PREFS_NAME
 
-class MySharedPreferences(private val context: Context) {
+class MySharedPreferences(context: Context) {
     private val sharedPreferences: SharedPreferences =
         context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 

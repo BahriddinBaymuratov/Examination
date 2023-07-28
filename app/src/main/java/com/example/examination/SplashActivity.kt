@@ -51,6 +51,7 @@ class SplashActivity : AppCompatActivity() {
         }.start()
     }
 
+
     private fun anim() {
         textView = findViewById(R.id.textSplash)
         val bounce: Animation = AnimationUtils.loadAnimation(this, R.anim.bounce)
